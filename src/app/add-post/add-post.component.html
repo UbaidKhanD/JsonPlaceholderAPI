@@ -1,0 +1,31 @@
+
+
+<form [formGroup]="datashow">
+
+<div class="input-group mb-12">
+    <span class="input-group-text">userid</span>
+    <input type="text" class="form-control" [(ngModel)]="userid">
+  </div>
+  <div class="input-group mb-12">
+    <span class="input-group-text">id</span>
+    <input type="text" class="form-control" [(ngModel)]="id">
+  </div>
+  <div class="input-group mb-12">
+    <span class="input-group-text" ><title></title></span>
+    <input type="text" class="form-control" [(ngModel)]="title">
+  </div>
+  <div class="input-group mb-12">
+    <span class="input-group-text"><body>
+        
+    </body> </span>
+    <input type="text" class="form-control" [(ngModel)]="body">
+  </div>
+  
+  
+  <button (click)="addPost" class="btn btn-primary">
+    Add PostData
+  </button>
+
+
+</form>
+ 
