@@ -4,7 +4,6 @@ import { Observable } from 'rxjs/internal/Observable';
 import { catchError } from 'rxjs/internal/operators/catchError';
 import { TodoData } from './todo-data';
 import { throwError } from 'rxjs/internal/observable/throwError';
-import { DemoAPI } from './demo-api';
 
 
 @Injectable({
@@ -29,8 +28,8 @@ export class ApiIntegrationService {
     debugger;
     
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
-    alert(this.apiUrl + 'post/Create');
-    return this.myhttp.post<any>(this.apiUrl +  postData, httpOptions);
+    alert(this.apiUrl + 'post');
+    return this.myhttp.post<any>(this.apiUrl, postData, httpOptions);
   
 
 

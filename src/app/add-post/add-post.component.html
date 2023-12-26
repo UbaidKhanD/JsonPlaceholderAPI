@@ -1,31 +1,45 @@
+<div class="container">
+  <div class="row">
+    <form [formGroup]="datashow" (ngSubmit)="addPost()">
 
 
-<form [formGroup]="datashow">
+      <label>user id</label>
+      <div>
+        <input type="text" class="form-control" formControlName="userid">
+        <span class="text-danger" *ngIf="(userPost.userid.touched || submitted) && userPost.userid.errors">
+          Please Enter the User ID
+        </span>
+      </div>
 
-<div class="input-group mb-12">
-    <span class="input-group-text">userid</span>
-    <input type="text" class="form-control" [(ngModel)]="userid">
+
+      <label>id</label>
+      <div>
+        <input type="text" class="form-control" formControlName="id">
+        <span class="text-danger" *ngIf="(userPost.id.touched || submitted) && userPost.id.errors">
+          Please Enter the ID
+        </span>
+      </div>
+
+
+      <label>title</label>
+      <div>
+        <input type="text" class="form-control" formControlName="title">
+        <span class="text-danger" *ngIf="(userPost.title.touched || submitted) && userPost.title.errors">
+          Please Enter the title
+        </span>
+      </div>
+
+
+      <label>body</label>
+      <div>
+        <input type="text" class="form-control" formControlName="body">
+        <span class="text-danger" *ngIf="(userPost.body.touched || submitted) && userPost.body.errors">
+          Please Enter the body
+        </span>
+      </div>
+
+
+      <button type="submit">Submit</button>
+    </form>
   </div>
-  <div class="input-group mb-12">
-    <span class="input-group-text">id</span>
-    <input type="text" class="form-control" [(ngModel)]="id">
-  </div>
-  <div class="input-group mb-12">
-    <span class="input-group-text" ><title></title></span>
-    <input type="text" class="form-control" [(ngModel)]="title">
-  </div>
-  <div class="input-group mb-12">
-    <span class="input-group-text"><body>
-        
-    </body> </span>
-    <input type="text" class="form-control" [(ngModel)]="body">
-  </div>
-  
-  
-  <button (click)="addPost" class="btn btn-primary">
-    Add PostData
-  </button>
-
-
-</form>
- 
+</div>
