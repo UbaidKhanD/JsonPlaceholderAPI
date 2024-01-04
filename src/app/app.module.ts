@@ -17,6 +17,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CustomValidateComponent } from './custom-validate/custom-validate.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { HomeComponent } from './home/home.component';
     ListPostComponent,
     CustomValidateComponent,
     HomeComponent,
+    HeaderComponent,
+    FooterComponent,
    
    
 

@@ -6,6 +6,8 @@ import { Route } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CustomValidateComponent } from './custom-validate/custom-validate.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'add-post', component: AddPostComponent },
   { path: 'list-post', component: ListPostComponent },
   {path:'custome-validation', component:CustomValidateComponent},
-  {path:'home', component:HomeComponent}
+  {path:'home', component:HomeComponent},
+  {path:'footer', component:FooterComponent},
+  {path:'header', component:HeaderComponent}
   
 
 ];
