@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -10,7 +11,8 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
   declarations: [
     HeaderComponent,
     FooterComponent,
-    StudentRegistrationComponent
+    StudentRegistrationComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule
